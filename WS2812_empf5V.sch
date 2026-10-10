@@ -1,0 +1,275 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_UART:MAX485E U1
+U 1 1 617A6E76
+P 3600 2050
+F 0 "U1" H 3600 2731 50  0000 C CNN
+F 1 "MAX485E" H 3600 2640 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3600 1350 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 3600 2100 50  0001 C CNN
+	1    3600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 617A7FE0
+P 4750 1050
+F 0 "C1" H 4865 1096 50  0000 L CNN
+F 1 "C" H 4865 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4788 900 50  0001 C CNN
+F 3 "~" H 4750 1050 50  0001 C CNN
+	1    4750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 617A896C
+P 5200 1050
+F 0 "C2" H 5318 1096 50  0000 L CNN
+F 1 "CP" H 5318 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.5" H 5238 900 50  0001 C CNN
+F 3 "~" H 5200 1050 50  0001 C CNN
+	1    5200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 617A908E
+P 4750 750
+F 0 "#PWR0101" H 4750 600 50  0001 C CNN
+F 1 "+5V" H 4765 923 50  0000 C CNN
+F 2 "" H 4750 750 50  0001 C CNN
+F 3 "" H 4750 750 50  0001 C CNN
+	1    4750 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 900  5200 900 
+Wire Wire Line
+	4750 900  4750 750 
+Connection ~ 4750 900 
+Wire Wire Line
+	4750 1200 5200 1200
+$Comp
+L power:GND #PWR0102
+U 1 1 617A9BC7
+P 4750 1300
+F 0 "#PWR0102" H 4750 1050 50  0001 C CNN
+F 1 "GND" H 4755 1127 50  0000 C CNN
+F 2 "" H 4750 1300 50  0001 C CNN
+F 3 "" H 4750 1300 50  0001 C CNN
+	1    4750 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1300 4750 1200
+Connection ~ 4750 1200
+$Comp
+L power:+5V #PWR0103
+U 1 1 617AA8C7
+P 3600 1300
+F 0 "#PWR0103" H 3600 1150 50  0001 C CNN
+F 1 "+5V" H 3615 1473 50  0000 C CNN
+F 2 "" H 3600 1300 50  0001 C CNN
+F 3 "" H 3600 1300 50  0001 C CNN
+	1    3600 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1550 3600 1300
+$Comp
+L Device:R R2
+U 1 1 617AAF2C
+P 4300 2100
+F 0 "R2" H 4370 2146 50  0000 L CNN
+F 1 "120" H 4370 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 2100 50  0001 C CNN
+F 3 "~" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2250 4300 2250
+Wire Wire Line
+	4000 1950 4300 1950
+Wire Wire Line
+	3200 2050 3150 2050
+Wire Wire Line
+	3150 2050 3150 2150
+Wire Wire Line
+	3150 2150 3200 2150
+Wire Wire Line
+	3150 2650 3600 2650
+Wire Wire Line
+	3150 2150 3150 2250
+Connection ~ 3150 2150
+Connection ~ 3600 2650
+Wire Wire Line
+	3200 2250 3150 2250
+Connection ~ 3150 2250
+Wire Wire Line
+	3150 2250 3150 2650
+Wire Wire Line
+	4550 2000 4550 1950
+Wire Wire Line
+	4550 1950 4300 1950
+Connection ~ 4300 1950
+Wire Wire Line
+	4300 2250 4550 2250
+Wire Wire Line
+	4550 2250 4550 2100
+Connection ~ 4300 2250
+Wire Wire Line
+	4650 2200 4650 2650
+Wire Wire Line
+	4650 2650 3600 2650
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 617AE203
+P 6050 1000
+F 0 "J3" H 6078 976 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6078 885 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type703_RT10N02HGLU_1x02_P9.52mm_Horizontal" H 6050 1000 50  0001 C CNN
+F 3 "~" H 6050 1000 50  0001 C CNN
+	1    6050 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 900  5500 900 
+Wire Wire Line
+	5850 900  5850 1000
+Connection ~ 5200 900 
+Wire Wire Line
+	5850 1100 5850 1200
+Wire Wire Line
+	5850 1200 5200 1200
+Connection ~ 5200 1200
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 617AFC2F
+P 4100 1100
+F 0 "J1" H 3992 775 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 3992 866 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type703_RT10N02HGLU_1x02_P9.52mm_Horizontal" H 4100 1100 50  0001 C CNN
+F 3 "~" H 4100 1100 50  0001 C CNN
+	1    4100 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 1100 4450 1100
+Wire Wire Line
+	4450 1100 4450 1200
+Wire Wire Line
+	4450 1200 4750 1200
+Wire Wire Line
+	4300 1000 4450 1000
+Wire Wire Line
+	4450 1000 4450 900 
+Wire Wire Line
+	4450 900  4750 900 
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 617B2097
+P 5150 2200
+F 0 "J2" H 5122 2082 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 5122 2173 50  0000 R CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_4-G-3.81_1x04_P3.81mm_Vertical" H 5150 2200 50  0001 C CNN
+F 3 "~" H 5150 2200 50  0001 C CNN
+	1    5150 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2000 4950 2000
+Wire Wire Line
+	4550 2100 4950 2100
+Wire Wire Line
+	4650 2200 4950 2200
+Wire Wire Line
+	4950 2300 4950 2750
+$Comp
+L power:GND #PWR0104
+U 1 1 617B4CF3
+P 3600 2950
+F 0 "#PWR0104" H 3600 2700 50  0001 C CNN
+F 1 "GND" H 3605 2777 50  0000 C CNN
+F 2 "" H 3600 2950 50  0001 C CNN
+F 3 "" H 3600 2950 50  0001 C CNN
+	1    3600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2950 3600 2650
+$Comp
+L Device:R R1
+U 1 1 617B571A
+P 2950 1950
+F 0 "R1" V 2743 1950 50  0000 C CNN
+F 1 "R" V 2834 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 1950 50  0001 C CNN
+F 3 "~" H 2950 1950 50  0001 C CNN
+	1    2950 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 1950 3200 1950
+Wire Wire Line
+	2800 1950 2800 2750
+Wire Wire Line
+	2800 2750 4950 2750
+$Comp
+L Device:LED D1
+U 1 1 615DD0BA
+P 5500 1800
+F 0 "D1" V 5539 1683 50  0000 R CNN
+F 1 "LED" V 5448 1683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5500 1800 50  0001 C CNN
+F 3 "~" H 5500 1800 50  0001 C CNN
+	1    5500 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 615DD727
+P 5500 1450
+F 0 "R3" H 5570 1496 50  0000 L CNN
+F 1 "R" H 5570 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 1450 50  0001 C CNN
+F 3 "~" H 5500 1450 50  0001 C CNN
+	1    5500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1300 5500 900 
+Connection ~ 5500 900 
+Wire Wire Line
+	5500 900  5850 900 
+Wire Wire Line
+	5500 1650 5500 1600
+$Comp
+L power:GND #PWR0105
+U 1 1 615DFC2B
+P 5500 2050
+F 0 "#PWR0105" H 5500 1800 50  0001 C CNN
+F 1 "GND" H 5505 1877 50  0000 C CNN
+F 2 "" H 5500 2050 50  0001 C CNN
+F 3 "" H 5500 2050 50  0001 C CNN
+	1    5500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1950 5500 2050
+$EndSCHEMATC

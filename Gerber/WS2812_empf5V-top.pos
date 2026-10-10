@@ -1,0 +1,11 @@
+### Module positions - created on 24.09.2021 08:47:03 ###
+### Printed by Pcbnew version kicad (5.1.5)-3
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val       Package                                           PosX       PosY       Rot  Side
+C1        C         C_0805_2012Metric_Pad1.15x1.40mm_HandSolder   129.6000   -74.8000    0.0000  top
+C2        CP        CP_Elec_8x6.5                                 122.8000   -70.2000  270.0000  top
+R1        R         R_0805_2012Metric_Pad1.15x1.40mm_HandSolder   119.2000   -82.4000  270.0000  top
+R2        120       R_0805_2012Metric_Pad1.15x1.40mm_HandSolder   131.0000   -79.0250  270.0000  top
+U1        MAX485E   SOIC-8_3.9x4.9mm_P1.27mm                      125.6000   -78.8000    0.0000  top
+## End
